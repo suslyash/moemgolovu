@@ -9,7 +9,7 @@
     :root {
       --bg: #ffffff;
       --fg: #111111;
-      --muted: #4b5563; /* серый текст */
+      --muted: #6b7280;
       --line: #e5e7eb;
       --accent: #111111;
       --container: 760px;
@@ -29,7 +29,7 @@
     body {
       margin: 0;
       background: var(--bg);
-      color: var(--muted); /* основной текст серый */
+      color: var(--fg);
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
@@ -42,10 +42,9 @@
       padding: 48px 20px 64px;
     }
 
-    /* Минималистичное оформление заголовков */
     h1, h2 {
       margin: 0 0 16px;
-      color: var(--fg); /* заголовки чуть контрастнее */
+      color: var(--fg);
       line-height: 1.25;
     }
 
@@ -58,7 +57,7 @@
 
     .subtitle {
       font-size: 15px;
-      color: var(--muted);
+      color: var(--fg); /* чёрный, как запросили */
       margin-bottom: 28px;
     }
 
@@ -66,7 +65,7 @@
       font-size: clamp(18px, 2.4vw, 22px);
       font-weight: 600;
       padding-left: 12px;
-      border-left: 3px solid var(--accent); /* тонкий акцент слева */
+      border-left: 3px solid var(--accent);
       letter-spacing: 0.01em;
       margin-top: 28px;
     }
@@ -79,15 +78,9 @@
       margin: 28px 0;
     }
 
-    .note {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    /* Чуть шире межстрочный интервал в списках/многострочных параграфах */
     .stack > * + * { margin-top: 10px; }
 
-    footer {
+    .footer {
       margin-top: 40px;
       font-size: 13px;
       color: var(--muted);
@@ -122,10 +115,7 @@
       <p>Изображение квартиры, особенно если на фото есть детали, позволяющие идентифицировать владельца (расположение квартиры, мебель в квартире), может быть отнесено к биометрическим персональным данным.</p>
       <p>Обработка таких данных (а съёмка и публикация — это обработка) требует письменного согласия субъекта данных, то есть жителей квартиры.</p>
     </section>
-
-    <hr />
-
-    <section class="stack">
+    <section class="footer">
       <p>Мы понимаем, что обсуждение и фотографии нашего жилища могли быть сделаны без злого умысла, возможно, из простого любопытства и недостатка воспитания. Однако для нас это вопрос личных границ и чувства безопасности в собственном доме.</p>
       <p>Мы надеемся на ваше понимание и уважение к нашему личному пространству. Рассчитываем, что подобные ситуации больше не повторятся.</p>
     </section>
